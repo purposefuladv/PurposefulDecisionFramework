@@ -1,0 +1,1297 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+<meta charset="UTF-8">\
+<meta name="viewport" content="width=device-width, initial-scale=1.0">\
+<title>Speak, Stay Silent, or Wait? \'97 Purposeful Advisors</title>\
+<style>\
+  @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,700&family=Public+Sans:wght@300;400;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&family=Oswald:wght@400;500;600;700&display=swap');\
+  *,*::before,*::after\{box-sizing:border-box;margin:0;padding:0\}\
+  :root\{\
+    --navy:#1c2a3f;--cream:#efeee7;--gold:#eab848;--gold-dark:#c8963a;\
+    --ink:#1a1a1a;--mid:#556070;--light:#8a96a3;--rule:#dcdbd3;\
+    --bg:#f7f6f0;--white:#ffffff;\
+    --speak:#2d6a4f;--speak-light:#e8f3ee;\
+    --wait:#b7791f;--wait-light:#fdf5e8;\
+    --silent:#5a6472;--narrow:#3d6b7a;--proactive:#2c5f8a;\
+  \}\
+  body\{font-family:"DM Sans",sans-serif;background:var(--cream);color:var(--ink);min-height:100vh;\}\
+\
+  .site-header\{position:relative;\}\
+  .logo-wrap\{display:flex;align-items:center;gap:12px;\}\
+  .logo-wordmark\{font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:#fff;\}\
+  .logo-text\{font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.45);\}\
+  .header-title\{font-family:"Playfair Display",serif;font-size:15px;font-weight:600;color:rgba(255,255,255,0.8);\}\
+\
+  .hero\{background:var(--navy);padding:32px 40px 40px;text-align:center;border-bottom:3px solid var(--gold);\}\
+  .hero-eyebrow\{font-size:10px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;\}\
+  .hero h1\{font-family:"Playfair Display",serif;font-size:34px;font-weight:700;color:#fff;letter-spacing:-0.02em;margin-bottom:10px;line-height:1.15;\}\
+  .hero p\{font-size:13px;font-weight:300;color:rgba(255,255,255,0.5);max-width:480px;margin:0 auto;line-height:1.6;\}\
+\
+  .main\{max-width:860px;margin:0 auto;padding:40px 24px 80px;display:flex;flex-direction:column;align-items:center;\}\
+\
+  .section-label\{font-size:9px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--light);margin:6px 0 8px;display:flex;align-items:center;gap:10px;\}\
+  .section-label::before,.section-label::after\{content:"";width:24px;height:1px;background:var(--rule);\}\
+\
+  .conn\{display:flex;flex-direction:column;align-items:center;\}\
+  .conn-line\{width:1px;height:24px;background:var(--rule);\}\
+  .conn-line.short\{height:16px;\}\
+  .conn-line.long\{height:36px;\}\
+  .conn-arrow\{width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-top:7px solid var(--rule);\}\
+  .conn-tag\{font-size:9px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold-dark);background:var(--cream);padding:1px 8px;border-radius:2px;\}\
+\
+  .entry-node\{background:var(--navy);color:#fff;font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;padding:11px 28px;border-radius:100px;\}\
+\
+  .context-panel\{width:100%;max-width:680px;background:var(--white);border:1.5px solid var(--rule);border-radius:6px;overflow:hidden;\}\
+  .context-header\{background:var(--navy);padding:12px 20px;\}\
+  .ctx-eyebrow\{font-size:9px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:2px;\}\
+  .ctx-title\{font-family:"Playfair Display",serif;font-size:15px;font-weight:600;color:#fff;\}\
+  .context-body\{padding:20px;display:grid;grid-template-columns:1fr 1fr;gap:20px;\}\
+  .ctx-group-label\{font-size:9.5px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--light);margin-bottom:8px;\}\
+  .ctx-options\{display:flex;flex-wrap:wrap;gap:6px;\}\
+  .ctx-btn\{font-family:"DM Sans",sans-serif;font-size:11.5px;font-weight:400;color:var(--mid);background:var(--cream);border:1.5px solid var(--rule);border-radius:3px;padding:6px 12px;cursor:pointer;transition:all 0.15s;\}\
+  .ctx-btn:hover\{border-color:var(--navy);color:var(--navy);\}\
+  .ctx-btn.active\{background:var(--navy);color:#fff;border-color:var(--navy);\}\
+\
+  .step-zero\{width:100%;max-width:680px;background:var(--white);border:1.5px solid var(--rule);border-top:3px solid var(--gold);border-radius:4px;overflow:hidden;\}\
+  .sz-header\{padding:14px 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--rule);background:#faf9f4;\}\
+  .sz-eyebrow\{font-size:9px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold-dark);margin-bottom:2px;\}\
+  .sz-title\{font-family:"Playfair Display",serif;font-size:16px;font-weight:600;color:var(--navy);\}\
+  .sz-instruction\{font-size:10.5px;font-weight:300;color:var(--light);font-style:italic;max-width:200px;text-align:right;line-height:1.5;\}\
+  .sz-body\{padding:16px 20px;display:grid;grid-template-columns:1fr 1fr;gap:16px 24px;\}\
+  .sz-group-name\{font-size:9.5px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-dark);margin-bottom:8px;padding-bottom:5px;border-bottom:1px solid var(--rule);\}\
+  .sz-checks\{display:flex;flex-direction:column;\}\
+\
+  .sh-row\{border-bottom:1px solid #f0efe8;\}\
+  .sh-row:last-child\{border-bottom:none;\}\
+\
+  .sh-main\{display:flex;align-items:center;gap:8px;padding:7px 4px;cursor:pointer;user-select:none;\}\
+\
+  /* Custom checkbox \'97 pure CSS, no JS needed for visual */\
+  .sh-checkbox\{width:15px;height:15px;border:1.5px solid var(--rule);border-radius:2px;flex-shrink:0;position:relative;background:#fff;transition:all 0.15s;display:flex;align-items:center;justify-content:center;\}\
+  .sh-row.checked .sh-checkbox\{background:var(--navy);border-color:var(--navy);\}\
+  .sh-checkbox::after\{content:"";width:4px;height:7px;border:2px solid transparent;border-top:none;border-left:none;transform:rotate(45deg);margin-bottom:1px;\}\
+  .sh-row.checked .sh-checkbox::after\{border-color:#fff;\}\
+\
+  .sh-label\{font-size:12px;font-weight:400;color:var(--mid);line-height:1.3;flex:1;transition:color 0.15s;\}\
+  .sh-row.checked .sh-label\{color:var(--navy);font-weight:500;\}\
+\
+  .compulsion-flag\{display:none;font-size:9px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;background:#fff3cd;color:#856404;border:1px solid #ffc107;border-radius:2px;padding:2px 6px;margin-left:auto;flex-shrink:0;\}\
+  .sh-row.compelled .compulsion-flag\{display:block;\}\
+\
+  .sh-reason\{display:none;padding:4px 4px 10px 27px;\}\
+  .sh-row.checked .sh-reason\{display:block;\}\
+  .reason-label\{font-size:9px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--light);margin-bottom:5px;\}\
+  .reason-opts\{display:flex;flex-wrap:wrap;gap:5px;\}\
+\
+  .reason-btn\{font-size:10px;font-weight:400;color:var(--mid);background:var(--cream);border:1px solid var(--rule);border-radius:2px;padding:3px 8px;cursor:pointer;transition:all 0.15s;font-family:"DM Sans",sans-serif;\}\
+  .reason-btn:hover\{border-color:var(--navy);color:var(--navy);\}\
+  .reason-btn.active\{background:var(--gold);border-color:var(--gold-dark);color:var(--navy);font-weight:500;\}\
+\
+  .sz-footer\{border-top:1px solid var(--rule);padding:12px 20px;display:flex;align-items:center;justify-content:space-between;background:#faf9f4;\}\
+  .sz-count\{font-size:11.5px;font-weight:300;color:var(--light);\}\
+  .count-num\{font-weight:600;color:var(--navy);\}\
+  .sz-proceed\{font-family:"DM Sans",sans-serif;font-size:10.5px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#fff;background:var(--navy);border:none;border-radius:3px;padding:9px 20px;cursor:pointer;opacity:0.3;pointer-events:none;transition:all 0.2s;\}\
+  .sz-proceed.active\{opacity:1;pointer-events:all;\}\
+  .sz-proceed.active:hover\{background:#263952;\}\
+\
+  .tree-section\{width:100%;max-width:760px;display:flex;flex-direction:column;align-items:center;opacity:0.2;pointer-events:none;transition:opacity 0.4s;\}\
+  .tree-section.active\{opacity:1;pointer-events:all;\}\
+\
+  .connector-fade\{opacity:0.25;transition:opacity 0.4s;\}\
+  .connector-fade.active\{opacity:1;\}\
+\
+  .signal-bar\{width:100%;max-width:560px;background:#fff3cd;border:1px solid #ffc107;border-radius:4px;padding:10px 16px;display:none;align-items:center;gap:10px;margin-bottom:8px;\}\
+  .signal-bar.visible\{display:flex;\}\
+  .signal-bar-icon\{font-size:14px;flex-shrink:0;\}\
+  .signal-bar-text\{font-size:11px;font-weight:400;color:#6b4e00;line-height:1.5;\}\
+  .signal-bar-text strong\{font-weight:600;\}\
+\
+  .d-node\{background:var(--white);border:1.5px solid var(--rule);border-radius:6px;padding:16px 24px;text-align:center;max-width:340px;width:100%;\}\
+  .d-node.highlighted\{border-color:var(--gold);box-shadow:0 0 0 3px rgba(234,184,72,0.15);\}\
+  .d-label\{font-size:9px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold-dark);margin-bottom:5px;\}\
+  .d-q\{font-family:"Playfair Display",serif;font-size:15px;font-weight:600;color:var(--navy);line-height:1.35;\}\
+  .d-hint\{font-size:10px;font-weight:300;color:var(--light);margin-top:5px;font-style:italic;\}\
+\
+  .yn\{font-size:10px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;padding:2px 10px;border-radius:2px;margin-bottom:3px;display:inline-block;\}\
+  .yn.yes\{color:var(--speak);background:var(--speak-light);\}\
+  .yn.no\{color:#9e3a2d;background:#fdf0ee;\}\
+  .yn.unclear\{color:var(--wait);background:var(--wait-light);\}\
+\
+  .branch\{display:flex;width:100%;align-items:flex-start;justify-content:center;\}\
+  .branch-col\{display:flex;flex-direction:column;align-items:center;flex:1;\}\
+  .v-div\{width:1px;background:var(--rule);margin:0 6px;align-self:stretch;min-height:60px;\}\
+\
+  .terminal\{border-radius:4px;padding:14px 16px;text-align:center;max-width:185px;width:100%;\}\
+  .terminal.speak\{background:var(--speak);\}\
+  .terminal.wait\{background:var(--wait);\}\
+  .terminal.silent\{background:var(--silent);\}\
+  .terminal.narrow\{background:var(--narrow);\}\
+  .terminal.proactive\{background:var(--proactive);\}\
+  .t-label\{font-size:8.5px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.55);margin-bottom:4px;\}\
+  .t-title\{font-family:"Playfair Display",serif;font-size:13px;font-weight:600;color:#fff;line-height:1.25;margin-bottom:4px;\}\
+  .t-sub\{font-size:9.5px;font-weight:300;color:rgba(255,255,255,0.72);line-height:1.5;\}\
+\
+  .readiness-gate\{width:100%;max-width:560px;background:var(--white);border:1.5px solid var(--gold);border-radius:6px;overflow:hidden;\}\
+  .rg-header\{background:var(--navy);padding:12px 20px;\}\
+  .rg-eyebrow\{font-size:9px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:3px;\}\
+  .rg-title\{font-family:"Playfair Display",serif;font-size:16px;font-weight:600;color:#fff;\}\
+  .rg-body\{padding:16px 20px;display:grid;grid-template-columns:1fr 1fr;gap:10px;\}\
+  .rg-dim\{border:1px solid var(--rule);border-radius:3px;padding:10px 12px;background:var(--cream);\}\
+  .rg-dim-num\{font-size:9px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-dark);margin-bottom:3px;\}\
+  .rg-dim-title\{font-size:12px;font-weight:500;color:var(--navy);margin-bottom:4px;\}\
+  .rg-check\{font-size:10.5px;font-weight:300;color:var(--mid);line-height:1.4;display:flex;align-items:flex-start;gap:5px;margin-bottom:2px;\}\
+  .rg-check::before\{content:"\'97";color:var(--rule);flex-shrink:0;font-size:10px;margin-top:1px;\}\
+  .rg-threshold\{border-top:1px solid var(--rule);padding:10px 20px;display:flex;align-items:center;gap:10px;background:#faf9f4;\}\
+  .threshold-label\{font-size:10px;font-weight:500;color:var(--mid);letter-spacing:0.06em;white-space:nowrap;\}\
+  .traffic-lights\{display:flex;gap:5px;\}\
+  .tl\{padding:3px 10px;border-radius:2px;font-size:9px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#fff;\}\
+  .tl.g\{background:var(--speak);\}\
+  .tl.y\{background:var(--wait);\}\
+  .tl.r\{background:#9e3a2d;\}\
+  .threshold-note\{font-size:10px;font-weight:300;color:var(--light);line-height:1.4;\}\
+\
+  .rg-check-item\{display:flex;align-items:flex-start;gap:8px;padding:5px 0;cursor:pointer;user-select:none;\}\
+  .rg-checkbox\{width:14px;height:14px;border:1.5px solid var(--rule);border-radius:2px;flex-shrink:0;margin-top:1px;position:relative;background:#fff;transition:all 0.15s;\}\
+  .rg-check-item.checked .rg-checkbox\{background:var(--speak);border-color:var(--speak);\}\
+  .rg-checkbox::after\{content:"";width:4px;height:7px;border:2px solid transparent;border-top:none;border-left:none;transform:rotate(45deg);position:absolute;top:1px;left:3px;\}\
+  .rg-check-item.checked .rg-checkbox::after\{border-color:#fff;\}\
+  .rg-check-item span\{font-size:11px;font-weight:400;color:var(--mid);line-height:1.5;transition:color 0.15s;\}\
+  .rg-check-item.checked span\{color:var(--navy);\}\
+  .rg-dim.complete\{background:#f0f7f3;border-color:#b7d8c8;\}\
+  .action-node\{border:1.5px solid var(--rule);border-radius:4px;padding:13px 16px;text-align:center;background:var(--white);max-width:200px;width:100%;\}\
+  .action-node.hold\{border-color:#9e3a2d;background:#fdf0ee;\}\
+  .action-node.go\{border-color:var(--speak);background:var(--speak-light);\}\
+  .action-node.risk\{border-color:var(--wait);background:var(--wait-light);\}\
+\
+  .dashed-sep\{width:100%;max-width:680px;border:none;border-top:1px dashed var(--rule);margin:32px 0 0;\}\
+  .dashed-label\{font-size:9.5px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--light);text-align:center;padding:10px 0;\}\
+\
+  .site-footer\{background:var(--navy);border-top:3px solid var(--gold);padding:14px 40px;display:flex;align-items:center;justify-content:center;\}\
+  .footer-note\{font-size:11px;font-weight:300;font-style:italic;color:rgba(255,255,255,0.4);max-width:480px;line-height:1.6;\}\
+  .footer-brand\{font-size:10px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.3);\}\
+</style>\
+</head>\
+<body>\
+\
+<style>\
+.header-inner \{\
+  position: relative;\
+  display: flex;\
+  align-items: center;\
+  min-height: clamp(80px, 10vw, 130px);\
+\}\
+.header-logo svg \{\
+  height: clamp(60px, 7vw, 100px);\
+  width: auto;\
+  display: block;\
+\}\
+.header-title-block \{\
+  position: absolute;\
+  left: 0;\
+  right: 0;\
+  top: 50%;\
+  transform: translateY(-50%);\
+  text-align: center;\
+  pointer-events: none;\
+  white-space: nowrap;\
+\}\
+.header-title-text \{\
+  font-family: 'Oswald', sans-serif;\
+  font-size: clamp(24px, 4vw, 52px);\
+  font-weight: 600;\
+  color: #eab848;\
+  letter-spacing: 0.06em;\
+  text-transform: uppercase;\
+  line-height: 1;\
+\}\
+@media (max-width: 700px) \{\
+  .header-inner \{\
+    flex-direction: column;\
+    align-items: flex-start;\
+    gap: 12px;\
+    padding-bottom: 8px;\
+  \}\
+  .header-title-block \{\
+    position: static;\
+    text-align: left;\
+    pointer-events: auto;\
+  \}\
+  .header-title-text \{\
+    font-size: clamp(22px, 6vw, 36px);\
+  \}\
+\}\
+</style>\
+\
+<header style="background:#1c2a3f;padding:clamp(20px,3vw,40px) clamp(20px,4vw,56px);border-bottom:3px solid #eab848;position:relative;">\
+  <div class="header-inner">\
+    <div class="header-logo" style="flex-shrink:0;z-index:1;">\
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150">\
+        <text x="10" y="60" font-family="Arial, sans-serif" font-weight="bold" font-size="48" fill="white">PURPOSEFUL</text>\
+        <rect x="10" y="75" width="280" height="6" fill="white" />\
+        <text x="10" y="120" font-family="Arial, sans-serif" font-size="42" fill="white" letter-spacing="4">advisors</text>\
+      </svg>\
+    </div>\
+    <div class="header-title-block">\
+      <div class="header-title-text">DECISION FRAMEWORK</div>\
+    </div>\
+  </div>\
+</header>\
+\
+\
+\
+\
+<div class="main">\
+\
+  <div style="width:100%;max-width:720px;text-align:center;padding:36px 0 8px;">\
+    <p style="font-family:'DM Sans',sans-serif;font-size:16px;font-weight:400;color:#4a5568;line-height:1.75;margin:0;">When an external situation demands a response, the hardest question is often whether to respond at all. This framework walks you through that decision layer by layer \'97 the output will tell you where you stand and what to do next.</p>\
+    <p style="font-family:'DM Sans',sans-serif;font-size:16px;font-weight:500;color:#4a5568;line-height:1.7;margin:14px 0 0;">You don't have to have the right answers, but it's your job to ensure the right questions are being asked.</p>\
+    <p style="font-family:'DM Sans',sans-serif;font-size:16px;font-weight:400;color:#4a5568;line-height:1.7;margin:18px 0 0;padding-top:16px;border-top:1px solid #e2e8f0;">Work through each layer by clicking the buttons that apply to your situation. Completing each section unlocks the next.</p>\
+  </div>\
+\
+  <div style="width:100%;max-width:860px;display:flex;flex-direction:column;align-items:center;gap:0;padding:20px 0 24px;">\
+      <div class="entry-node">An Issue Has Emerged</div>\
+      <div class="conn"><div class="conn-line long"></div><div class="conn-arrow"></div></div>\
+  </div>\
+\
+  <div class="section-label">Step Zero &mdash; Set Context</div>\
+\
+  <div class="context-panel">\
+    <div class="context-header">\
+      <div class="ctx-eyebrow">Before Anything Else</div>\
+      <div class="ctx-title">What kind of organization?</div>\
+    </div>\
+    <div class="context-body">\
+      <div>\
+        <div class="ctx-group-label">Entity Type</div>\
+        <div class="ctx-options" id="entityBtns">\
+          <button class="ctx-btn" data-val="public">Public Company</button>\
+          <button class="ctx-btn" data-val="private">Private Company</button>\
+          <button class="ctx-btn" data-val="ngo">NGO / Non-Profit</button>\
+        </div>\
+      </div>\
+      <div>\
+        <div class="ctx-group-label">Industry</div>\
+        <div class="ctx-options" id="industryBtns">\
+          <button class="ctx-btn" data-val="cpg">CPG / Consumer</button>\
+          <button class="ctx-btn" data-val="tech">Technology</button>\
+          <button class="ctx-btn" data-val="finance">Financial Services</button>\
+          <button class="ctx-btn" data-val="defense">Defense &amp; Aerospace</button>\
+          <button class="ctx-btn" data-val="health">Healthcare</button>\
+          <button class="ctx-btn" data-val="pharma">Pharma &amp; Life Sciences</button>\
+          <button class="ctx-btn" data-val="construction">Construction &amp; Real Estate</button>\
+          <button class="ctx-btn" data-val="oilgas">Oil &amp; Gas</button>\
+          <button class="ctx-btn" data-val="utility">Utilities</button>\
+          <button class="ctx-btn" data-val="energy">Energy (Other)</button>\
+          <button class="ctx-btn" data-val="crypto">Crypto &amp; Digital Assets</button>\
+          <button class="ctx-btn" data-val="highered">Higher Education</button>\
+          <button class="ctx-btn" data-val="ag">Agriculture &amp; Food</button>\
+          <button class="ctx-btn" data-val="other">Other</button>\
+        </div>\
+      </div>\
+    </div>\
+  </div>\
+\
+  <div class="conn"><div class="conn-line long"></div><div class="conn-arrow"></div></div>\
+  <div class="section-label">Layer 01 &mdash; Stakeholder Mapping</div>\
+\
+  <div class="step-zero" id="stepZeroPanel">\
+    <div class="sz-header">\
+      <div>\
+        <div class="sz-eyebrow">Who is watching?</div>\
+        <div class="sz-title">Map your activated stakeholders</div>\
+      </div>\
+      <div class="sz-instruction">Check each audience currently watching, then select why they are activated</div>\
+    </div>\
+    <div class="sz-body" id="stakeholderGrid">\
+      <div style="grid-column:1/-1;text-align:center;padding:24px;color:var(--light);font-size:13px;font-style:italic;">Select an entity type above to populate your stakeholder universe</div>\
+    </div>\
+    <div class="sz-footer">\
+      <div class="sz-count"><span class="count-num" id="activatedCount">0</span> audiences activated &middot; <span class="count-num" id="compelledCount">0</span> compulsion signals</div>\
+      <button class="sz-proceed" id="proceedBtn">Proceed to Decision &rarr;</button>\
+    </div>\
+  </div>\
+\
+  <div class="conn connector-fade" id="treeConnector">\
+    <div class="conn-line long"></div>\
+    <div class="conn-tag">Mapping complete &mdash; enter decision tree</div>\
+    <div class="conn-line short"></div>\
+    <div class="conn-arrow"></div>\
+  </div>\
+\
+  <div class="tree-section" id="treeSection">\
+\
+    <div class="section-label">Layer 02 &mdash; Decision Criteria</div>\
+\
+    <div class="signal-bar" id="signalBar">\
+      <div class="signal-bar-icon">&#9888;</div>\
+      <div class="signal-bar-text"><strong>Compulsion signals detected.</strong> One or more activated stakeholders are directly affected or calling for a response &mdash; Question 1 likely resolves as <strong>Yes.</strong></div>\
+    </div>\
+\
+    <div class="d-node" id="q1node">\
+      <div class="d-label">Question 1 of 3</div>\
+      <div class="d-q">Are we compelled to speak?</div>\
+      <div class="d-hint">Legal obligation &middot; Relational compulsion &middot; Operational necessity</div>\
+    </div>\
+\
+    <div class="branch" style="max-width:740px;">\
+      <div class="branch-col">\
+        <div class="conn"><div class="conn-line"></div><div class="yn no">No</div><div class="conn-line short"></div><div class="conn-arrow"></div></div>\
+        <div class="d-node" style="max-width:270px;">\
+          <div class="d-label">Question 2 of 3</div>\
+          <div class="d-q">Do we have standing?</div>\
+          <div class="d-hint">Relevance &middot; Credibility &middot; Track record</div>\
+        </div>\
+        <div class="branch" style="max-width:320px;">\
+          <div class="branch-col">\
+            <div class="conn"><div class="conn-line"></div><div class="yn no">Weak</div><div class="conn-line short"></div><div class="conn-arrow"></div></div>\
+            <div class="terminal silent"><div class="t-label">Counsel</div><div class="t-title">Stay Silent</div><div class="t-sub">Build standing for the next moment</div></div>\
+          </div>\
+          <div class="v-div"></div>\
+          <div class="branch-col">\
+            <div class="conn"><div class="conn-line"></div><div class="yn yes">Strong</div><div class="conn-line short"></div><div class="conn-arrow"></div></div>\
+            <div class="d-node" style="max-width:200px;"><div class="d-label">Question 3 of 3</div><div class="d-q">Does speaking serve us and our stakeholders?</div></div>\
+            <div class="branch" style="max-width:260px;">\
+              <div class="branch-col">\
+                <div class="conn"><div class="conn-line"></div><div class="yn unclear">Unclear</div><div class="conn-line short"></div><div class="conn-arrow"></div></div>\
+                <div class="terminal wait"><div class="t-label">Counsel</div><div class="t-title">Monitor &amp; Prepare</div><div class="t-sub">Build the statement. Hold the release.</div></div>\
+              </div>\
+              <div class="v-div"></div>\
+              <div class="branch-col">\
+                <div class="conn"><div class="conn-line"></div><div class="yn yes">Clear</div><div class="conn-line short"></div><div class="conn-arrow"></div></div>\
+                <div class="terminal proactive"><div class="t-label">Counsel</div><div class="t-title">Proactive Opportunity</div><div class="t-sub">Speak on your terms, your timeline</div></div>\
+              </div>\
+            </div>\
+          </div>\
+        </div>\
+      </div>\
+\
+      <div class="v-div" style="min-height:120px;margin:0 12px;"></div>\
+\
+      <div class="branch-col">\
+        <div class="conn"><div class="conn-line"></div><div class="yn yes">Yes</div><div class="conn-line short"></div><div class="conn-arrow"></div></div>\
+        <div class="d-node" style="max-width:270px;">\
+          <div class="d-label">Question 2 of 3</div>\
+          <div class="d-q">Do we have standing?</div>\
+          <div class="d-hint">Relevance &middot; Credibility &middot; Track record</div>\
+        </div>\
+        <div class="branch" style="max-width:320px;">\
+          <div class="branch-col">\
+            <div class="conn"><div class="conn-line"></div><div class="yn no">No</div><div class="conn-line short"></div><div class="conn-arrow"></div></div>\
+            <div class="terminal wait"><div class="t-label">Counsel</div><div class="t-title">Compulsion Only</div><div class="t-sub">Speak to the obligation. Do not expand.</div></div>\
+          </div>\
+          <div class="v-div"></div>\
+          <div class="branch-col">\
+            <div class="conn"><div class="conn-line"></div><div class="yn yes">Yes</div><div class="conn-line short"></div><div class="conn-arrow"></div></div>\
+            <div class="d-node" style="max-width:200px;"><div class="d-label">Question 3 of 3</div><div class="d-q">Does speaking serve us and our stakeholders?</div></div>\
+            <div class="branch" style="max-width:260px;">\
+              <div class="branch-col">\
+                <div class="conn"><div class="conn-line"></div><div class="yn unclear">Unclear</div><div class="conn-line short"></div><div class="conn-arrow"></div></div>\
+                <div class="terminal narrow"><div class="t-label">Counsel</div><div class="t-title">Speak &mdash; Narrow</div><div class="t-sub">Limit scope. Sequence audiences carefully.</div></div>\
+              </div>\
+              <div class="v-div"></div>\
+              <div class="branch-col">\
+                <div class="conn"><div class="conn-line"></div><div class="yn yes">Clear</div><div class="conn-line short"></div><div class="conn-arrow"></div></div>\
+                <div class="terminal speak"><div class="t-label">Counsel</div><div class="t-title">Speak with Conviction</div><div class="t-sub">Full voice. Lead the narrative.</div></div>\
+              </div>\
+            </div>\
+          </div>\
+        </div>\
+      </div>\
+    </div>\
+\
+    <hr class="dashed-sep">\
+    <div class="dashed-label">If any path leads to speaking &mdash; clear this gate before executing</div>\
+    <div class="conn"><div class="conn-line"></div><div class="conn-arrow"></div></div>\
+    <div class="section-label">Layer 03 &mdash; Organizational Readiness</div>\
+\
+    <div class="readiness-gate">\
+      <div class="rg-header">\
+        <div class="rg-eyebrow">Before You Execute</div>\
+        <div class="rg-title">Are you ready to speak?</div>\
+      </div>\
+      <div class="rg-body" id="readinessGrid">\
+        <div class="rg-dim" data-dim="0">\
+          <div class="rg-dim-num">01</div><div class="rg-dim-title">Factual Readiness</div>\
+          <div class="rg-check-item" data-dim="0" data-idx="0"><div class="rg-checkbox"></div><span>We know what we know \'97 and what we don't</span></div>\
+          <div class="rg-check-item" data-dim="0" data-idx="1"><div class="rg-checkbox"></div><span>We can answer follow-up questions this statement generates</span></div>\
+        </div>\
+        <div class="rg-dim" data-dim="1">\
+          <div class="rg-dim-num">02</div><div class="rg-dim-title">Organizational Alignment</div>\
+          <div class="rg-check-item" data-dim="1" data-idx="0"><div class="rg-checkbox"></div><span>Legal cleared</span></div>\
+          <div class="rg-check-item" data-dim="1" data-idx="1"><div class="rg-checkbox"></div><span>Board briefed &middot; Leadership on consistent message</span></div>\
+          <div class="rg-check-item" data-dim="1" data-idx="2"><div class="rg-checkbox"></div><span>Internal audiences notified before external release</span></div>\
+        </div>\
+        <div class="rg-dim" data-dim="2">\
+          <div class="rg-dim-num">03</div><div class="rg-dim-title">Messenger Readiness</div>\
+          <div class="rg-check-item" data-dim="2" data-idx="0"><div class="rg-checkbox"></div><span>Seniority of messenger matches magnitude of issue</span></div>\
+          <div class="rg-check-item" data-dim="2" data-idx="1"><div class="rg-checkbox"></div><span>Messenger has credibility on this specific issue</span></div>\
+          <div class="rg-check-item" data-dim="2" data-idx="2"><div class="rg-checkbox"></div><span>Hard Q&amp;A practiced, not just talking points reviewed</span></div>\
+        </div>\
+        <div class="rg-dim" data-dim="3">\
+          <div class="rg-dim-num">04</div><div class="rg-dim-title">Infrastructure Readiness</div>\
+          <div class="rg-check-item" data-dim="3" data-idx="0"><div class="rg-checkbox"></div><span>Channels sequenced and prepared</span></div>\
+          <div class="rg-check-item" data-dim="3" data-idx="1"><div class="rg-checkbox"></div><span>Monitoring capacity in place</span></div>\
+          <div class="rg-check-item" data-dim="3" data-idx="2"><div class="rg-checkbox"></div><span>Response capacity briefed and available</span></div>\
+        </div>\
+      </div>\
+      <div class="rg-threshold">\
+        <div class="threshold-label">Readiness Score</div>\
+        <div id="readinessScore" style="font-size:13px;font-weight:500;color:var(--mid);">\'97 / 4 dimensions complete</div>\
+        <div id="readinessVerdict" style="font-size:10px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;padding:3px 12px;border-radius:2px;background:var(--rule);color:var(--mid);">Not yet assessed</div>\
+      </div>\
+    </div>\
+\
+    <div class="conn"><div class="conn-line"></div><div class="conn-arrow"></div></div>\
+\
+    <div id="readinessAction" class="action-node" style="max-width:400px;text-align:center;">\
+      <div class="action-title" id="readinessActionTitle">Complete the readiness assessment above</div>\
+      <div class="action-sub" id="readinessActionSub">Check each criterion that is satisfied to generate your readiness verdict.</div>\
+    </div>\
+\
+  </div>\
+\
+  <div class="conn connector-fade active"><div class="conn-line long"></div><div class="conn-arrow"></div></div>\
+\
+  <div id="summaryBlock" style="width:100%;max-width:560px;background:var(--white);border:1.5px solid var(--rule);border-top:3px solid var(--navy);border-radius:4px;overflow:hidden;margin-bottom:60px;">\
+    <div style="background:var(--navy);padding:12px 20px;">\
+      <div style="font-size:9px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:2px;">Assessment Output</div>\
+      <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:600;color:#fff;">Your Situational Summary</div>\
+    </div>\
+    <div style="padding:20px 24px;font-size:12px;font-weight:400;color:var(--mid);line-height:1.9;" id="summaryContent">\
+      <span style="color:var(--light);font-style:italic;">Complete the assessment above to generate your summary.</span>\
+    </div>\
+    <div style="border-top:1px solid var(--rule);padding:10px 24px;background:#faf9f4;display:flex;justify-content:flex-end;">\
+      <button id="resetBtn" style="font-family:'DM Sans',sans-serif;font-size:10px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--mid);background:transparent;border:1px solid var(--rule);border-radius:3px;padding:7px 16px;cursor:pointer;">Start Over</button>\
+    </div>\
+  </div>\
+\
+</div>\
+\
+<script>\
+(function() \{\
+  // \uc0\u9472 \u9472  STATE \u9472 \u9472 \
+  var state = \{\
+    entity: null,\
+    industry: null,\
+    activated: \{\},\
+    compulsionTriggers: ["directly-affected","calling-for-response","material-disclosure"]\
+  \};\
+\
+  var reasonLabels = \{\
+    "directly-affected": "Directly affected",\
+    "calling-for-response": "Calling for a response",\
+    "silence-misread": "Silence will be misread",\
+    "material-disclosure": "Disclosure obligation"\
+  \};\
+\
+  var groupNames = \{\
+    internal: "Internal",\
+    commercial: "Commercial",\
+    regulatory: "Regulatory & Government",\
+    reputational: "Reputational & Community"\
+  \};\
+\
+  var industryOverlay = \{\
+    cpg: \{\
+      internal: [\
+        \{id:"i-emp",label:"Employees",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"i-mgmt",label:"Brand & Marketing Leadership",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"i-board",label:"Board of Directors",reasons:["directly-affected","calling-for-response","material-disclosure"]\}\
+      ],\
+      commercial: [\
+        \{id:"i-retail",label:"Retail Channel Partners",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"i-cons",label:"End Consumers",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"i-grocer",label:"Grocery / Mass Retail Buyers",reasons:["calling-for-response","directly-affected"]\},\
+        \{id:"i-advt",label:"Advertising Partners",reasons:["calling-for-response","silence-misread"]\}\
+      ],\
+      regulatory: [\
+        \{id:"i-ftc",label:"FTC / Consumer Protection",reasons:["calling-for-response","directly-affected"]\},\
+        \{id:"i-fda-cpg",label:"FDA (food / labeling)",reasons:["calling-for-response","directly-affected","material-disclosure"]\},\
+        \{id:"i-elec-fed",label:"Elected Officials (Federal)",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"i-elec-state",label:"Elected Officials (State)",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"i-elec-local",label:"Elected Officials (Local)",reasons:["calling-for-response","silence-misread"]\}\
+      ],\
+      reputational: [\
+        \{id:"i-nat",label:"National Media",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"i-soc",label:"Social Media & Influencers",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"i-ngo",label:"Consumer Advocacy NGOs",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"i-pub",label:"General Public",reasons:["silence-misread"]\}\
+      ]\
+    \},\
+    tech: \{\
+      internal: [\
+        \{id:"t-eng",label:"Engineering & Product Teams",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"t-emp",label:"Employees (broad)",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"t-board",label:"Board of Directors",reasons:["directly-affected","calling-for-response","material-disclosure"]\},\
+        \{id:"t-inv",label:"Investors / VCs",reasons:["calling-for-response","directly-affected"]\}\
+      ],\
+      commercial: [\
+        \{id:"t-ent",label:"Enterprise Customers",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"t-dev",label:"Developer Community",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"t-part",label:"Platform Partners",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"t-pros",label:"Prospects",reasons:["silence-misread"]\}\
+      ],\
+      regulatory: [\
+        \{id:"t-ftc",label:"FTC / Antitrust",reasons:["calling-for-response","directly-affected","material-disclosure"]\},\
+        \{id:"t-doj",label:"DOJ",reasons:["calling-for-response","directly-affected"]\},\
+        \{id:"t-eu",label:"EU / International Regulators",reasons:["calling-for-response","directly-affected"]\},\
+        \{id:"t-cong",label:"Congressional Oversight Committees",reasons:["calling-for-response","silence-misread"]\}\
+      ],\
+      reputational: [\
+        \{id:"t-tech",label:"Tech Media",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"t-nat",label:"National Media",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"t-civil",label:"Civil Society / Digital Rights Groups",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"t-pub",label:"General Public",reasons:["silence-misread"]\}\
+      ]\
+    \},\
+    finance: \{\
+      internal: [\
+        \{id:"f-emp",label:"Employees",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"f-exec",label:"C-Suite & Senior Leadership",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"f-board",label:"Board & Audit Committee",reasons:["directly-affected","calling-for-response","material-disclosure"]\},\
+        \{id:"f-inv",label:"Institutional Investors / LPs",reasons:["calling-for-response","material-disclosure"]\}\
+      ],\
+      commercial: [\
+        \{id:"f-client",label:"Institutional Clients",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"f-retail",label:"Retail Clients",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"f-cpart",label:"Counterparties & Partners",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"f-anal",label:"Sell-Side Analysts",reasons:["calling-for-response","material-disclosure"]\}\
+      ],\
+      regulatory: [\
+        \{id:"f-sec",label:"SEC",reasons:["material-disclosure","directly-affected","calling-for-response"]\},\
+        \{id:"f-fed",label:"Federal Reserve / OCC / FDIC",reasons:["calling-for-response","directly-affected","material-disclosure"]\},\
+        \{id:"f-cfpb",label:"CFPB",reasons:["calling-for-response","directly-affected"]\},\
+        \{id:"f-cong",label:"Congressional Committees",reasons:["calling-for-response","silence-misread"]\}\
+      ],\
+      reputational: [\
+        \{id:"f-fin",label:"Financial Press",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"f-nat",label:"National Media",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"f-watch",label:"Consumer Watchdogs",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"f-rating",label:"Credit Rating Agencies",reasons:["calling-for-response","silence-misread"]\}\
+      ]\
+    \},\
+    defense: \{\
+      internal: [\
+        \{id:"d-emp",label:"Employees & Cleared Personnel",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"d-exec",label:"Senior Leadership",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"d-board",label:"Board of Directors",reasons:["directly-affected","calling-for-response","material-disclosure"]\},\
+        \{id:"d-inv",label:"Institutional Investors",reasons:["calling-for-response","material-disclosure"]\}\
+      ],\
+      commercial: [\
+        \{id:"d-dod",label:"DoD Program Offices",reasons:["directly-affected","calling-for-response","material-disclosure"]\},\
+        \{id:"d-prime",label:"Prime Contractors",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"d-sub",label:"Subcontractors & Suppliers",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"d-ally",label:"Allied Nation Partners",reasons:["directly-affected","silence-misread"]\}\
+      ],\
+      regulatory: [\
+        \{id:"d-dcsa",label:"DCSA / Security Authorities",reasons:["directly-affected","calling-for-response","material-disclosure"]\},\
+        \{id:"d-state-dept",label:"State Dept / ITAR / Export Control",reasons:["directly-affected","calling-for-response","material-disclosure"]\},\
+        \{id:"d-hasc",label:"HASC / SASC (Congress)",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"d-gao",label:"GAO / Inspector General",reasons:["calling-for-response","directly-affected"]\}\
+      ],\
+      reputational: [\
+        \{id:"d-trade",label:"Defense Trade Press",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"d-nat",label:"National Media",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"d-think",label:"Think Tanks & Policy Orgs",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"d-vet",label:"Veteran & Military Community",reasons:["directly-affected","silence-misread"]\}\
+      ]\
+    \},\
+    health: \{\
+      internal: [\
+        \{id:"h-clin",label:"Clinical & Medical Staff",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"h-emp",label:"Administrative Employees",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"h-board",label:"Board of Directors",reasons:["directly-affected","calling-for-response","material-disclosure"]\},\
+        \{id:"h-inv",label:"Investors / Health System Partners",reasons:["calling-for-response","directly-affected"]\}\
+      ],\
+      commercial: [\
+        \{id:"h-pat",label:"Patients & Families",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"h-pay",label:"Payers / Insurers",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"h-phys",label:"Referring Physicians",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"h-part",label:"Health System Partners",reasons:["directly-affected","calling-for-response"]\}\
+      ],\
+      regulatory: [\
+        \{id:"h-cms",label:"CMS / Medicare & Medicaid",reasons:["calling-for-response","directly-affected","material-disclosure"]\},\
+        \{id:"h-fda",label:"FDA",reasons:["calling-for-response","directly-affected","material-disclosure"]\},\
+        \{id:"h-oig",label:"HHS / OIG",reasons:["calling-for-response","directly-affected"]\},\
+        \{id:"h-state",label:"State Health Departments",reasons:["calling-for-response","directly-affected"]\}\
+      ],\
+      reputational: [\
+        \{id:"h-hlth",label:"Health & Medical Media",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"h-nat",label:"National Media",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"h-adv",label:"Patient Advocacy Groups",reasons:["calling-for-response","silence-misread","directly-affected"]\},\
+        \{id:"h-comm",label:"Local Community",reasons:["directly-affected","silence-misread"]\}\
+      ]\
+    \},\
+    pharma: \{\
+      internal: [\
+        \{id:"ph-sci",label:"Research & Scientific Staff",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"ph-emp",label:"Employees (broad)",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"ph-board",label:"Board of Directors",reasons:["directly-affected","calling-for-response","material-disclosure"]\},\
+        \{id:"ph-inv",label:"Institutional Investors",reasons:["calling-for-response","material-disclosure"]\}\
+      ],\
+      commercial: [\
+        \{id:"ph-hcp",label:"Healthcare Providers / Prescribers",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"ph-pay",label:"Payers & PBMs",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"ph-hosp",label:"Hospital Systems",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"ph-pat",label:"Patients & Caregivers",reasons:["directly-affected","calling-for-response","silence-misread"]\}\
+      ],\
+      regulatory: [\
+        \{id:"ph-fda",label:"FDA",reasons:["material-disclosure","directly-affected","calling-for-response"]\},\
+        \{id:"ph-doj",label:"DOJ / False Claims Act",reasons:["calling-for-response","directly-affected"]\},\
+        \{id:"ph-cong",label:"Congressional Pricing Committees",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"ph-state",label:"State AGs",reasons:["calling-for-response","directly-affected"]\}\
+      ],\
+      reputational: [\
+        \{id:"ph-sci-press",label:"Scientific & Medical Press",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"ph-nat",label:"National Media",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"ph-adv",label:"Patient Advocacy Organizations",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"ph-pub",label:"General Public",reasons:["silence-misread"]\}\
+      ]\
+    \},\
+    construction: \{\
+      internal: [\
+        \{id:"c-labor",label:"Craft Labor & Union Workers",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"c-pm",label:"Project Management Teams",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"c-exec",label:"Senior Leadership",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"c-board",label:"Board / Ownership",reasons:["directly-affected","calling-for-response","material-disclosure"]\}\
+      ],\
+      commercial: [\
+        \{id:"c-own",label:"Project Owners & Developers",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"c-sub",label:"Subcontractors & Trade Partners",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"c-sup",label:"Suppliers & Materials Vendors",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"c-lend",label:"Lenders & Surety Bonds",reasons:["directly-affected","calling-for-response"]\}\
+      ],\
+      regulatory: [\
+        \{id:"c-osha",label:"OSHA",reasons:["directly-affected","calling-for-response","material-disclosure"]\},\
+        \{id:"c-plan",label:"Local Planning & Zoning Authorities",reasons:["calling-for-response","directly-affected"]\},\
+        \{id:"c-env",label:"Environmental Agencies (EPA / State)",reasons:["calling-for-response","directly-affected"]\},\
+        \{id:"c-labor-dept",label:"Dept. of Labor",reasons:["calling-for-response","directly-affected"]\}\
+      ],\
+      reputational: [\
+        \{id:"c-trade",label:"Construction Trade Press",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"c-comm",label:"Local Community & Neighbors",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"c-env-grp",label:"Environmental Groups",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"c-nat",label:"National / Regional Media",reasons:["calling-for-response","silence-misread"]\}\
+      ]\
+    \},\
+    oilgas: \{\
+      internal: [\
+        \{id:"og-field",label:"Field & Rig Workers",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"og-emp",label:"Employees (corporate)",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"og-exec",label:"Senior Leadership",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"og-board",label:"Board of Directors",reasons:["directly-affected","calling-for-response","material-disclosure"]\},\
+        \{id:"og-inv",label:"Institutional Investors / ESG Funds",reasons:["calling-for-response","material-disclosure"]\}\
+      ],\
+      commercial: [\
+        \{id:"og-cust",label:"Downstream Customers",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"og-part",label:"JV Partners & Operators",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"og-midstream",label:"Midstream / Pipeline Partners",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"og-land",label:"Landowners & Mineral Rights Holders",reasons:["directly-affected","calling-for-response"]\}\
+      ],\
+      regulatory: [\
+        \{id:"og-epa",label:"EPA",reasons:["calling-for-response","directly-affected","material-disclosure"]\},\
+        \{id:"og-bsee",label:"BSEE / BOEM (offshore)",reasons:["calling-for-response","directly-affected","material-disclosure"]\},\
+        \{id:"og-ferc",label:"FERC",reasons:["calling-for-response","directly-affected"]\},\
+        \{id:"og-state",label:"State Oil & Gas Commissions",reasons:["calling-for-response","directly-affected"]\},\
+        \{id:"og-cong",label:"Congressional Energy Committees",reasons:["calling-for-response","silence-misread"]\}\
+      ],\
+      reputational: [\
+        \{id:"og-energy-press",label:"Energy Trade Press",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"og-nat",label:"National Media",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"og-env",label:"Environmental NGOs",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"og-comm",label:"Local / Host Communities",reasons:["directly-affected","calling-for-response","silence-misread"]\}\
+      ]\
+    \},\
+    utility: \{\
+      internal: [\
+        \{id:"u-ops",label:"Operations & Grid Staff",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"u-emp",label:"Employees (corporate)",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"u-exec",label:"Senior Leadership",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"u-board",label:"Board of Directors",reasons:["directly-affected","calling-for-response","material-disclosure"]\}\
+      ],\
+      commercial: [\
+        \{id:"u-rate",label:"Ratepayers / Residential Customers",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"u-comm",label:"Commercial & Industrial Customers",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"u-muni",label:"Municipal Partners",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"u-gen",label:"Independent Power Generators",reasons:["directly-affected","calling-for-response"]\}\
+      ],\
+      regulatory: [\
+        \{id:"u-puc",label:"State PUC / Public Utility Commission",reasons:["directly-affected","calling-for-response","material-disclosure"]\},\
+        \{id:"u-ferc",label:"FERC",reasons:["calling-for-response","directly-affected","material-disclosure"]\},\
+        \{id:"u-nerc",label:"NERC (reliability)",reasons:["calling-for-response","directly-affected"]\},\
+        \{id:"u-epa",label:"EPA",reasons:["calling-for-response","directly-affected"]\},\
+        \{id:"u-elec-fed",label:"Elected Officials (Federal)",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"u-elec-state",label:"Elected Officials (State)",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"u-elec-local",label:"Elected Officials (Local)",reasons:["calling-for-response","silence-misread"]\}\
+      ],\
+      reputational: [\
+        \{id:"u-trade",label:"Utility Trade Press",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"u-nat",label:"National / Regional Media",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"u-env",label:"Environmental Groups",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"u-comm-grp",label:"Ratepayer Advocacy Groups",reasons:["directly-affected","calling-for-response","silence-misread"]\}\
+      ]\
+    \},\
+    energy: \{\
+      internal: [\
+        \{id:"en-emp",label:"Employees & Technical Staff",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"en-exec",label:"Senior Leadership",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"en-board",label:"Board of Directors",reasons:["directly-affected","calling-for-response","material-disclosure"]\},\
+        \{id:"en-inv",label:"Investors / Project Finance Partners",reasons:["calling-for-response","directly-affected","material-disclosure"]\}\
+      ],\
+      commercial: [\
+        \{id:"en-off",label:"Offtakers & Power Purchase Agreement Partners",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"en-util",label:"Utility Partners",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"en-epc",label:"EPC / Construction Contractors",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"en-grid",label:"Grid Operators (ISO/RTO)",reasons:["directly-affected","calling-for-response"]\}\
+      ],\
+      regulatory: [\
+        \{id:"en-ferc",label:"FERC",reasons:["calling-for-response","directly-affected","material-disclosure"]\},\
+        \{id:"en-doe",label:"DOE",reasons:["calling-for-response","directly-affected"]\},\
+        \{id:"en-epa",label:"EPA",reasons:["calling-for-response","directly-affected"]\},\
+        \{id:"en-state",label:"State Energy Offices & PUCs",reasons:["calling-for-response","directly-affected"]\},\
+        \{id:"en-elec-fed",label:"Elected Officials (Federal)",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"en-elec-state",label:"Elected Officials (State)",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"en-elec-local",label:"Elected Officials (Local)",reasons:["calling-for-response","silence-misread"]\}\
+      ],\
+      reputational: [\
+        \{id:"en-trade",label:"Clean Energy Trade Press",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"en-nat",label:"National Media",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"en-env",label:"Environmental NGOs",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"en-comm",label:"Host Communities & Landowners",reasons:["directly-affected","calling-for-response","silence-misread"]\}\
+      ]\
+    \},\
+    crypto: \{\
+      internal: [\
+        \{id:"cr-eng",label:"Engineering & Protocol Teams",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"cr-emp",label:"Employees (broad)",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"cr-found",label:"Founders / Token Holders",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"cr-inv",label:"VCs & Institutional Backers",reasons:["calling-for-response","directly-affected","material-disclosure"]\}\
+      ],\
+      commercial: [\
+        \{id:"cr-ret",label:"Retail Token / Asset Holders",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"cr-inst",label:"Institutional Clients",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"cr-exch",label:"Exchange Partners",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"cr-dev",label:"Developer / Builder Community",reasons:["directly-affected","calling-for-response","silence-misread"]\}\
+      ],\
+      regulatory: [\
+        \{id:"cr-sec",label:"SEC",reasons:["material-disclosure","directly-affected","calling-for-response"]\},\
+        \{id:"cr-cftc",label:"CFTC",reasons:["calling-for-response","directly-affected","material-disclosure"]\},\
+        \{id:"cr-doj",label:"DOJ / FinCEN",reasons:["calling-for-response","directly-affected"]\},\
+        \{id:"cr-state",label:"State Financial Regulators (BitLicense etc.)",reasons:["calling-for-response","directly-affected"]\},\
+        \{id:"cr-cong",label:"Congressional Crypto Committees",reasons:["calling-for-response","silence-misread"]\}\
+      ],\
+      reputational: [\
+        \{id:"cr-trade",label:"Crypto & Web3 Media",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"cr-nat",label:"National Financial Media",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"cr-soc",label:"Social / CT (Crypto Twitter)",reasons:["calling-for-response","silence-misread","directly-affected"]\},\
+        \{id:"cr-civil",label:"Consumer Protection & Digital Rights Groups",reasons:["calling-for-response","silence-misread"]\}\
+      ]\
+    \},\
+    highered: \{\
+      internal: [\
+        \{id:"he-fac",label:"Faculty & Academic Staff",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"he-staff",label:"Administrative Staff",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"he-board",label:"Board of Trustees",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"he-pres",label:"President / Provost",reasons:["directly-affected","calling-for-response"]\}\
+      ],\
+      commercial: [\
+        \{id:"he-stu",label:"Students (current)",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"he-alum",label:"Alumni & Donors",reasons:["calling-for-response","silence-misread","directly-affected"]\},\
+        \{id:"he-par",label:"Parents",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"he-corp",label:"Corporate Research Partners",reasons:["directly-affected","calling-for-response"]\}\
+      ],\
+      regulatory: [\
+        \{id:"he-accred",label:"Accreditors",reasons:["calling-for-response","directly-affected","material-disclosure"]\},\
+        \{id:"he-doe",label:"Dept. of Education",reasons:["calling-for-response","directly-affected","material-disclosure"]\},\
+        \{id:"he-cong",label:"Congressional Committees",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"he-state-leg",label:"State Legislature / Governor",reasons:["calling-for-response","directly-affected"]\}\
+      ],\
+      reputational: [\
+        \{id:"he-higher-ed",label:"Higher Ed Press",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"he-nat",label:"National Media",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"he-stu-press",label:"Student Press",reasons:["calling-for-response","silence-misread","directly-affected"]\},\
+        \{id:"he-civil",label:"Civil Liberties & Advocacy Groups",reasons:["calling-for-response","silence-misread"]\}\
+      ]\
+    \},\
+    ag: \{\
+      internal: [\
+        \{id:"ag-farm",label:"Farmers & Growers",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"ag-emp",label:"Processing & Operations Staff",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"ag-exec",label:"Senior Leadership",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"ag-board",label:"Board of Directors / Cooperative Board",reasons:["directly-affected","calling-for-response","material-disclosure"]\}\
+      ],\
+      commercial: [\
+        \{id:"ag-retail",label:"Food Retailers & Grocery Chains",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"ag-rest",label:"Restaurant & Foodservice",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"ag-dist",label:"Distributors & Wholesalers",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"ag-cons",label:"End Consumers",reasons:["directly-affected","silence-misread"]\}\
+      ],\
+      regulatory: [\
+        \{id:"ag-usda",label:"USDA",reasons:["calling-for-response","directly-affected","material-disclosure"]\},\
+        \{id:"ag-epa",label:"EPA (pesticides / water)",reasons:["calling-for-response","directly-affected"]\},\
+        \{id:"ag-fda",label:"FDA (food safety)",reasons:["calling-for-response","directly-affected","material-disclosure"]\},\
+        \{id:"ag-state",label:"State Ag Departments",reasons:["calling-for-response","directly-affected"]\},\
+        \{id:"ag-cong",label:"House / Senate Ag Committees",reasons:["calling-for-response","silence-misread"]\}\
+      ],\
+      reputational: [\
+        \{id:"ag-trade",label:"Ag Trade Press",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"ag-nat",label:"National Media",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"ag-env",label:"Environmental & Sustainability Groups",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"ag-lab",label:"Labor & Farmworker Advocates",reasons:["calling-for-response","directly-affected","silence-misread"]\},\
+        \{id:"ag-rural",label:"Rural Communities",reasons:["directly-affected","silence-misread"]\}\
+      ]\
+    \},\
+    other: \{\
+      internal: [\
+        \{id:"o-emp",label:"Employees",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"o-mgmt",label:"Senior Leadership",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"o-board",label:"Board of Directors",reasons:["directly-affected","calling-for-response","material-disclosure"]\}\
+      ],\
+      commercial: [\
+        \{id:"o-cust",label:"Customers / Clients",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"o-part",label:"Partners & Vendors",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"o-inv",label:"Investors / Funders",reasons:["calling-for-response","directly-affected"]\}\
+      ],\
+      regulatory: [\
+        \{id:"o-reg-fed",label:"Regulators (Federal)",reasons:["directly-affected","material-disclosure"]\},\
+        \{id:"o-reg-state",label:"Regulators (State)",reasons:["directly-affected","material-disclosure"]\},\
+        \{id:"o-reg-local",label:"Regulators (Local)",reasons:["directly-affected","material-disclosure"]\},\
+        \{id:"o-elec-fed",label:"Elected Officials (Federal)",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"o-elec-state",label:"Elected Officials (State)",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"o-elec-local",label:"Elected Officials (Local)",reasons:["calling-for-response","silence-misread"]\}\
+      ],\
+      reputational: [\
+        \{id:"o-nat",label:"National Media",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"o-trade",label:"Trade Press",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"o-ngo",label:"NGOs & Watchdogs",reasons:["calling-for-response"]\},\
+        \{id:"o-comm",label:"Local Community",reasons:["directly-affected","silence-misread"]\}\
+      ]\
+    \}\
+  \};\
+\
+  var entityBase = \{\
+    public: \{\
+      internal: [\
+        \{id:"p-emp",label:"Employees",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"p-mgmt",label:"Middle Management",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"p-board",label:"Board of Directors",reasons:["directly-affected","calling-for-response","material-disclosure"]\},\
+        \{id:"p-inst",label:"Institutional Investors",reasons:["calling-for-response","material-disclosure"]\},\
+        \{id:"p-retail",label:"Retail Shareholders",reasons:["material-disclosure","silence-misread"]\}\
+      ],\
+      commercial: [\
+        \{id:"p-cust",label:"Customers / Clients",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"p-pros",label:"Prospects",reasons:["silence-misread"]\},\
+        \{id:"p-part",label:"Partners & Vendors",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"p-anal",label:"Sell-Side Analysts",reasons:["calling-for-response","material-disclosure"]\}\
+      ],\
+      regulatory: [\
+        \{id:"p-sec",label:"SEC / Financial Regulators",reasons:["material-disclosure","directly-affected","calling-for-response"]\},\
+        \{id:"p-reg-fed",label:"Regulators (Federal)",reasons:["directly-affected","material-disclosure"]\},\
+        \{id:"p-reg-state",label:"Regulators (State)",reasons:["directly-affected","material-disclosure"]\},\
+        \{id:"p-reg-local",label:"Regulators (Local)",reasons:["directly-affected","material-disclosure"]\},\
+        \{id:"p-elec-fed",label:"Elected Officials (Federal)",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"p-elec-state",label:"Elected Officials (State)",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"p-elec-local",label:"Elected Officials (Local)",reasons:["calling-for-response","silence-misread"]\}\
+      ],\
+      reputational: [\
+        \{id:"p-nat",label:"National Media",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"p-trade",label:"Trade Press",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"p-ngo",label:"NGOs & Watchdogs",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"p-comm",label:"Local Community",reasons:["directly-affected","silence-misread"]\}\
+      ]\
+    \},\
+    private: \{\
+      internal: [\
+        \{id:"pr-emp",label:"Employees",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"pr-mgmt",label:"Middle Management",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"pr-board",label:"Board of Directors",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"pr-pe",label:"PE / VC Backers",reasons:["calling-for-response","directly-affected"]\},\
+        \{id:"pr-found",label:"Founding Principals",reasons:["directly-affected","calling-for-response"]\}\
+      ],\
+      commercial: [\
+        \{id:"pr-cust",label:"Customers / Clients",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"pr-pros",label:"Prospects",reasons:["silence-misread"]\},\
+        \{id:"pr-part",label:"Partners & Vendors",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"pr-chan",label:"Channel Partners",reasons:["directly-affected","silence-misread"]\}\
+      ],\
+      regulatory: [\
+        \{id:"pr-reg-fed",label:"Regulators (Federal)",reasons:["directly-affected","material-disclosure"]\},\
+        \{id:"pr-reg-state",label:"Regulators (State)",reasons:["directly-affected","material-disclosure"]\},\
+        \{id:"pr-reg-local",label:"Regulators (Local)",reasons:["directly-affected","material-disclosure"]\},\
+        \{id:"pr-elec-fed",label:"Elected Officials (Federal)",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"pr-elec-state",label:"Elected Officials (State)",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"pr-elec-local",label:"Elected Officials (Local)",reasons:["calling-for-response","silence-misread"]\}\
+      ],\
+      reputational: [\
+        \{id:"pr-trade",label:"Trade Press",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"pr-nat",label:"National Media",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"pr-ngo",label:"NGOs & Watchdogs",reasons:["calling-for-response"]\},\
+        \{id:"pr-comm",label:"Local Community",reasons:["directly-affected","silence-misread"]\}\
+      ]\
+    \},\
+    ngo: \{\
+      internal: [\
+        \{id:"n-staff",label:"Staff",reasons:["directly-affected","calling-for-response","silence-misread"]\},\
+        \{id:"n-board",label:"Board of Directors",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"n-vol",label:"Volunteers",reasons:["directly-affected","calling-for-response"]\}\
+      ],\
+      commercial: [\
+        \{id:"n-don",label:"Major Donors",reasons:["calling-for-response","directly-affected","silence-misread"]\},\
+        \{id:"n-found",label:"Foundations & Grant-Makers",reasons:["calling-for-response","directly-affected","material-disclosure"]\},\
+        \{id:"n-ben",label:"Beneficiary Community",reasons:["directly-affected","calling-for-response"]\},\
+        \{id:"n-corp",label:"Corporate Partners",reasons:["calling-for-response","silence-misread"]\}\
+      ],\
+      regulatory: [\
+        \{id:"n-irs",label:"IRS / Tax Authorities",reasons:["material-disclosure","directly-affected"]\},\
+        \{id:"n-gov",label:"Government Grant Agencies",reasons:["calling-for-response","directly-affected"]\},\
+        \{id:"n-elec-fed",label:"Elected Officials (Federal)",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"n-elec-state",label:"Elected Officials (State)",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"n-elec-local",label:"Elected Officials (Local)",reasons:["calling-for-response","silence-misread"]\}\
+      ],\
+      reputational: [\
+        \{id:"n-nat",label:"National Media",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"n-adv",label:"Peer Advocacy Orgs",reasons:["calling-for-response","silence-misread"]\},\
+        \{id:"n-comm",label:"Local Community",reasons:["directly-affected","silence-misread"]\},\
+        \{id:"n-pub",label:"General Public",reasons:["silence-misread"]\}\
+      ]\
+    \}\
+  \};\
+\
+  var stakeholders = entityBase;\
+\
+  // \uc0\u9472 \u9472  ENTITY BUTTONS \u9472 \u9472 \
+  document.getElementById("entityBtns").addEventListener("click", function(e) \{\
+    var btn = e.target.closest(".ctx-btn");\
+    if (!btn) return;\
+    document.querySelectorAll("#entityBtns .ctx-btn").forEach(function(b) \{ b.classList.remove("active"); \});\
+    btn.classList.add("active");\
+    state.entity = btn.dataset.val;\
+    state.activated = \{\};\
+    renderStakeholders();\
+  \});\
+\
+  // \uc0\u9472 \u9472  INDUSTRY BUTTONS \u9472 \u9472 \
+  document.getElementById("industryBtns").addEventListener("click", function(e) \{\
+    var btn = e.target.closest(".ctx-btn");\
+    if (!btn) return;\
+    document.querySelectorAll("#industryBtns .ctx-btn").forEach(function(b) \{ b.classList.remove("active"); \});\
+    btn.classList.add("active");\
+    state.industry = btn.dataset.val;\
+    state.activated = \{\};\
+    if (state.entity) renderStakeholders();\
+  \});\
+\
+  // \uc0\u9472 \u9472  STAKEHOLDER GRID (event delegation) \u9472 \u9472 \
+  document.getElementById("stepZeroPanel").addEventListener("click", function(e) \{\
+    // Stakeholder row toggle\
+    var shMain = e.target.closest(".sh-main");\
+    if (shMain) \{\
+      var row = shMain.closest(".sh-row");\
+      var id = row.dataset.id;\
+      if (row.classList.contains("checked")) \{\
+        row.classList.remove("checked", "compelled");\
+        delete state.activated[id];\
+        row.querySelectorAll(".reason-btn").forEach(function(b) \{ b.classList.remove("active"); \});\
+      \} else \{\
+        row.classList.add("checked");\
+        state.activated[id] = \{ reason: null \};\
+      \}\
+      updateCounts();\
+      return;\
+    \}\
+\
+    // Reason button\
+    var reasonBtn = e.target.closest(".reason-btn");\
+    if (reasonBtn) \{\
+      var row = reasonBtn.closest(".sh-row");\
+      var id = row.dataset.id;\
+      row.querySelectorAll(".reason-btn").forEach(function(b) \{ b.classList.remove("active"); \});\
+      reasonBtn.classList.add("active");\
+      if (state.activated[id]) state.activated[id].reason = reasonBtn.dataset.reason;\
+      var isCompulsion = state.compulsionTriggers.indexOf(reasonBtn.dataset.reason) > -1;\
+      if (isCompulsion) \{ row.classList.add("compelled"); \} else \{ row.classList.remove("compelled"); \}\
+      updateCounts();\
+    \}\
+  \});\
+\
+  // \uc0\u9472 \u9472  PROCEED BUTTON \u9472 \u9472 \
+  document.getElementById("proceedBtn").addEventListener("click", function() \{\
+    if (!this.classList.contains("active")) return;\
+    var compelled = document.querySelectorAll(".sh-row.compelled").length;\
+    document.getElementById("treeSection").classList.add("active");\
+    document.getElementById("treeConnector").classList.add("active");\
+    if (compelled > 0) \{\
+      document.getElementById("signalBar").classList.add("visible");\
+      document.getElementById("q1node").classList.add("highlighted");\
+    \} else \{\
+      document.getElementById("signalBar").classList.remove("visible");\
+      document.getElementById("q1node").classList.remove("highlighted");\
+    \}\
+    setTimeout(function() \{\
+      document.getElementById("treeSection").scrollIntoView(\{ behavior: "smooth", block: "start" \});\
+    \}, 200);\
+  \});\
+\
+  // \uc0\u9472 \u9472  RENDER \u9472 \u9472 \
+  function mergeStakeholders(entityKey, industryKey) \{\
+    var base = entityBase[entityKey];\
+    var overlay = industryKey && industryOverlay[industryKey] ? industryOverlay[industryKey] : null;\
+    if (!overlay) return base;\
+    var merged = \{\};\
+    var groups = ["internal","commercial","regulatory","reputational"];\
+    groups.forEach(function(g) \{\
+      var baseItems = base[g] || [];\
+      var overlayItems = overlay[g] || [];\
+      // Deduplicate by label, overlay items take precedence\
+      var seen = \{\};\
+      var combined = [];\
+      overlayItems.forEach(function(item) \{ seen[item.label] = true; combined.push(item); \});\
+      baseItems.forEach(function(item) \{ if (!seen[item.label]) combined.push(item); \});\
+      merged[g] = combined;\
+    \});\
+    return merged;\
+  \}\
+\
+  function renderStakeholders() \{\
+    if (!state.entity) return;\
+    var data = mergeStakeholders(state.entity, state.industry);\
+    var html = "";\
+    Object.keys(data).forEach(function(groupKey) \{\
+      var items = data[groupKey];\
+      var rows = items.map(function(item) \{\
+        var btns = item.reasons.map(function(r) \{\
+          return '<button class="reason-btn" data-reason="' + r + '">' + reasonLabels[r] + '</button>';\
+        \}).join("");\
+        return '<div class="sh-row" data-id="' + item.id + '">' +\
+          '<div class="sh-main">' +\
+            '<div class="sh-checkbox"></div>' +\
+            '<span class="sh-label">' + item.label + '</span>' +\
+            '<span class="compulsion-flag">Compulsion Signal</span>' +\
+          '</div>' +\
+          '<div class="sh-reason">' +\
+            '<div class="reason-label">Why are they activated?</div>' +\
+            '<div class="reason-opts">' + btns + '</div>' +\
+          '</div>' +\
+        '</div>';\
+      \}).join("");\
+      html += '<div><div class="sz-group-name">' + groupNames[groupKey] + '</div><div class="sz-checks">' + rows + '</div></div>';\
+    \});\
+    document.getElementById("stakeholderGrid").innerHTML = html;\
+    updateCounts();\
+  \}\
+\
+  function updateCounts() \{\
+    var activated = Object.keys(state.activated).length;\
+    var compelled = document.querySelectorAll(".sh-row.compelled").length;\
+    document.getElementById("activatedCount").textContent = activated;\
+    document.getElementById("compelledCount").textContent = compelled;\
+    var btn = document.getElementById("proceedBtn");\
+    if (activated > 0) \{ btn.classList.add("active"); \} else \{ btn.classList.remove("active"); \}\
+    if (typeof updateSummary === "function") updateSummary();\
+  \}\
+\
+  // \uc0\u9472 \u9472  READINESS STATE \u9472 \u9472 \
+  var readiness = \{\
+    dims: [[false,false],[false,false,false],[false,false,false],[false,false,false]]\
+  \};\
+\
+  function dimComplete(d) \{\
+    return readiness.dims[d].every(function(v)\{ return v; \});\
+  \}\
+\
+  function completedDims() \{\
+    return readiness.dims.filter(function(_,i)\{ return dimComplete(i); \}).length;\
+  \}\
+\
+  function updateReadiness() \{\
+    var total = completedDims();\
+    var scoreEl = document.getElementById("readinessScore");\
+    var verdictEl = document.getElementById("readinessVerdict");\
+    var actionTitle = document.getElementById("readinessActionTitle");\
+    var actionSub = document.getElementById("readinessActionSub");\
+    var actionNode = document.getElementById("readinessAction");\
+\
+    scoreEl.textContent = total + " / 4 dimensions complete";\
+\
+    actionNode.className = "action-node";\
+    if (total === 0) \{\
+      verdictEl.textContent = "Not yet assessed";\
+      verdictEl.style.background = "var(--rule)";\
+      verdictEl.style.color = "var(--mid)";\
+      actionTitle.textContent = "Complete the readiness assessment above";\
+      actionSub.textContent = "Check each criterion that is satisfied to generate your readiness verdict.";\
+    \} else if (total === 4) \{\
+      verdictEl.textContent = "Go \'97 Execute";\
+      verdictEl.style.background = "var(--speak)";\
+      verdictEl.style.color = "#fff";\
+      actionNode.classList.add("go");\
+      actionTitle.textContent = "Execute with precision.";\
+      actionSub.textContent = "Internal first. Monitor in real time. Document everything.";\
+    \} else if (total >= 2) \{\
+      verdictEl.textContent = "Proceed \'97 Managing Risk";\
+      verdictEl.style.background = "var(--wait)";\
+      verdictEl.style.color = "#fff";\
+      actionNode.classList.add("risk");\
+      actionTitle.textContent = "Proceed \'97 but name the gaps.";\
+      actionSub.textContent = "Identify which dimensions are incomplete and actively manage those risks.";\
+    \} else \{\
+      verdictEl.textContent = "Hold";\
+      verdictEl.style.background = "#9e3a2d";\
+      verdictEl.style.color = "#fff";\
+      actionNode.classList.add("hold");\
+      actionTitle.textContent = "Hold. Address the gap.";\
+      actionSub.textContent = "A botched execution creates a second crisis layered on the first.";\
+    \}\
+\
+    // Highlight complete dims\
+    document.querySelectorAll(".rg-dim").forEach(function(dim, i) \{\
+      if (dimComplete(i)) \{ dim.classList.add("complete"); \} else \{ dim.classList.remove("complete"); \}\
+    \});\
+\
+    updateSummary();\
+  \}\
+\
+  // \uc0\u9472 \u9472  READINESS CLICK \u9472 \u9472 \
+  document.getElementById("readinessGrid").addEventListener("click", function(e) \{\
+    var item = e.target.closest(".rg-check-item");\
+    if (!item) return;\
+    var d = parseInt(item.dataset.dim);\
+    var idx = parseInt(item.dataset.idx);\
+    readiness.dims[d][idx] = !readiness.dims[d][idx];\
+    if (readiness.dims[d][idx]) \{ item.classList.add("checked"); \} else \{ item.classList.remove("checked"); \}\
+    updateReadiness();\
+  \});\
+\
+  // \uc0\u9472 \u9472  SUMMARY \u9472 \u9472 \
+  function updateSummary() \{\
+    var el = document.getElementById("summaryContent");\
+\
+    var entityLabels = \{ public:"Public Company", private:"Private Company", ngo:"NGO / Non-Profit" \};\
+    var industryLabels = \{\
+      cpg:"CPG / Consumer", tech:"Technology", finance:"Financial Services",\
+      defense:"Defense & Aerospace", health:"Healthcare", pharma:"Pharma & Life Sciences",\
+      construction:"Construction & Real Estate", oilgas:"Oil & Gas", utility:"Utilities",\
+      energy:"Energy (Other)", crypto:"Crypto & Digital Assets", highered:"Higher Education",\
+      ag:"Agriculture & Food", other:"Other"\
+    \};\
+    var dimTitles = ["Factual Readiness","Organizational Alignment","Messenger Readiness","Infrastructure Readiness"];\
+\
+    var lines = [];\
+\
+    // Context\
+    var entityStr = state.entity ? entityLabels[state.entity] : "Not selected";\
+    var industryStr = state.industry ? industryLabels[state.industry] : "Not selected";\
+    lines.push('<div style="margin-bottom:14px;"><div style="font-size:9px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-dark);margin-bottom:5px;">Organization Context</div>');\
+    lines.push('<div>' + entityStr + (state.industry ? ' &mdash; ' + industryStr : '') + '</div></div>');\
+\
+    // Stakeholders\
+    var activatedRows = document.querySelectorAll(".sh-row.checked");\
+    lines.push('<div style="margin-bottom:14px;"><div style="font-size:9px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-dark);margin-bottom:5px;">Activated Stakeholders (' + activatedRows.length + ')</div>');\
+    if (activatedRows.length === 0) \{\
+      lines.push('<div style="color:var(--light);font-style:italic;">None selected</div>');\
+    \} else \{\
+      activatedRows.forEach(function(row) \{\
+        var label = row.querySelector(".sh-label").textContent;\
+        var activeReason = row.querySelector(".reason-btn.active");\
+        var reasonText = activeReason ? activeReason.textContent : "Reason not specified";\
+        var isCompelled = row.classList.contains("compelled");\
+        lines.push('<div style="padding:2px 0;">' +\
+          (isCompelled ? '<span style="color:#856404;font-weight:500;">&#9888; </span>' : '&ndash; ') +\
+          label + ' <span style="color:var(--light);">(' + reasonText + ')</span>' +\
+        '</div>');\
+      \});\
+    \}\
+    lines.push('</div>');\
+\
+    // Compulsion signals\
+    var compelledCount = document.querySelectorAll(".sh-row.compelled").length;\
+    lines.push('<div style="margin-bottom:14px;"><div style="font-size:9px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-dark);margin-bottom:5px;">Compulsion Signals</div>');\
+    if (compelledCount === 0) \{\
+      lines.push('<div>None detected &mdash; speaking is a choice, not an obligation</div>');\
+    \} else \{\
+      lines.push('<div style="color:#856404;font-weight:500;">' + compelledCount + ' signal' + (compelledCount > 1 ? 's' : '') + ' detected &mdash; Question 1 likely resolves as Yes</div>');\
+    \}\
+    lines.push('</div>');\
+\
+    // Readiness\
+    var total = completedDims();\
+    var readinessStr = total === 4 ? "Go \'97 all four dimensions complete" :\
+                       total >= 2 ? "Proceed with caution \'97 " + (4-total) + " dimension" + (4-total > 1 ? "s" : "") + " incomplete" :\
+                       total > 0  ? "Hold \'97 significant gaps remain" :\
+                                    "Not yet assessed";\
+    lines.push('<div style="margin-bottom:6px;"><div style="font-size:9px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-dark);margin-bottom:5px;">Readiness Assessment</div>');\
+    lines.push('<div>' + readinessStr + '</div>');\
+\
+    if (total > 0 && total < 4) \{\
+      var gaps = [];\
+      readiness.dims.forEach(function(dim, i) \{\
+        if (!dimComplete(i)) gaps.push(dimTitles[i]);\
+      \});\
+      lines.push('<div style="margin-top:4px;color:var(--light);">Gaps: ' + gaps.join(", ") + '</div>');\
+    \}\
+    lines.push('</div>');\
+\
+    el.innerHTML = lines.join("");\
+  \}\
+\
+  // \uc0\u9472 \u9472  RESET \u9472 \u9472 \
+  document.getElementById("resetBtn").addEventListener("click", function() \{\
+    state.entity = null;\
+    state.industry = null;\
+    state.activated = \{\};\
+    readiness.dims = [[false,false],[false,false,false],[false,false,false],[false,false,false]];\
+\
+    document.querySelectorAll("#entityBtns .ctx-btn, #industryBtns .ctx-btn").forEach(function(b)\{ b.classList.remove("active"); \});\
+    document.getElementById("stakeholderGrid").innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:24px;color:var(--light);font-size:13px;font-style:italic;">Select an entity type above to populate your stakeholder universe</div>';\
+    document.getElementById("treeSection").classList.remove("active");\
+    document.getElementById("treeConnector").classList.remove("active");\
+    document.getElementById("signalBar").classList.remove("visible");\
+    document.getElementById("q1node").classList.remove("highlighted");\
+    document.querySelectorAll(".rg-check-item").forEach(function(i)\{ i.classList.remove("checked"); \});\
+    document.querySelectorAll(".rg-dim").forEach(function(d)\{ d.classList.remove("complete"); \});\
+    document.getElementById("readinessScore").textContent = "\'97 / 4 dimensions complete";\
+    document.getElementById("readinessVerdict").textContent = "Not yet assessed";\
+    document.getElementById("readinessVerdict").style.background = "var(--rule)";\
+    document.getElementById("readinessVerdict").style.color = "var(--mid)";\
+    document.getElementById("readinessAction").className = "action-node";\
+    document.getElementById("readinessActionTitle").textContent = "Complete the readiness assessment above";\
+    document.getElementById("readinessActionSub").textContent = "Check each criterion that is satisfied to generate your readiness verdict.";\
+    document.getElementById("summaryContent").innerHTML = '<span style="color:var(--light);font-style:italic;">Complete the assessment above to generate your summary.</span>';\
+    updateCounts();\
+    window.scrollTo(\{ top: 0, behavior: "smooth" \});\
+  \});\
+\
+\})();\
+</script>\
+\
+<footer style="background:#1c2a3f;padding:clamp(16px,3vw,28px) clamp(20px,5vw,60px);margin-top:60px;border-top:3px solid #eab848;text-align:center;">\
+  <a href="https://www.purposefuladv.com" target="_blank" style="font-family:'DM Sans',sans-serif;font-size:clamp(12px,2vw,15px);font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.6);text-decoration:none;">www.purposefuladv.com</a>\
+</footer>\
+\
+<style>\
+/* Fluid typography for body content */\
+.ctx-title        \{ font-size: clamp(13px, 2vw, 16px) !important; \}\
+.ctx-eyebrow      \{ font-size: clamp(8px, 1.2vw, 10px) !important; \}\
+.ctx-group-label  \{ font-size: clamp(8px, 1.2vw, 10px) !important; \}\
+.ctx-btn          \{ font-size: clamp(11px, 1.5vw, 13px) !important; \}\
+.section-label    \{ font-size: clamp(9px, 1.3vw, 11px) !important; \}\
+.sz-title         \{ font-size: clamp(13px, 2vw, 16px) !important; \}\
+.sh-label         \{ font-size: clamp(11px, 1.5vw, 13px) !important; \}\
+.reason-tag       \{ font-size: clamp(8px, 1.1vw, 10px) !important; \}\
+.d-q              \{ font-size: clamp(12px, 1.8vw, 15px) !important; \}\
+.rg-title         \{ font-size: clamp(13px, 2vw, 16px) !important; \}\
+.rg-dim-title     \{ font-size: clamp(11px, 1.5vw, 13px) !important; \}\
+.rg-check-label   \{ font-size: clamp(11px, 1.5vw, 13px) !important; \}\
+.entry-node       \{ font-size: clamp(9px, 1.4vw, 11px) !important; \}\
+</style>\
+\
+</body>\
+</html>}
